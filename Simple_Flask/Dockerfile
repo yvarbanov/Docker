@@ -1,6 +1,6 @@
 FROM python:alpine
 
-MAINTAINER yvarbanov
+LABEL maintainer "yvarbanov"
 
 WORKDIR /usr/src/app
 

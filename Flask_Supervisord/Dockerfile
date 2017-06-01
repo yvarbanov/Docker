@@ -1,6 +1,6 @@
 FROM python:2.7.13-alpine
 
-MAINTAINER yvarbanov
+LABEL maintainer "yvarbanov"
 
 COPY requirements.txt .
 
