@@ -13,4 +13,4 @@ RUN pip install -r requirements.txt
 
 COPY supervisord.conf /etc/supervisor/
 
-CMD ["/usr/bin/supervisord"]
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
