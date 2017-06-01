@@ -9,6 +9,6 @@ RUN pip install -r requirements.txt
 COPY app1.py /usr/src/app1/
 COPY app2.py /usr/src/app2/
 
-ADD supervisord.conf /etc/supervisor/supervisord.conf
+COPY supervisord.conf /etc/supervisor/supervisord.conf
 
-CMD ["supervisord"]
+CMD ["supervisord","-c","/etc/supervisor/supervisord.conf"]
