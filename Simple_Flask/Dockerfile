@@ -4,7 +4,8 @@ LABEL maintainer "yvarbanov"
 
 WORKDIR /usr/src/app
 
-COPY . .
+COPY app.py app.py
+COPY requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt
 
